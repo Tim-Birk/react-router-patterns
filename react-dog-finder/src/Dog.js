@@ -1,9 +1,12 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 
 const Dog = ({ dogs }) => {
   const { name } = useParams();
 
   const dog = dogs.find((d) => d.name === name);
+  if (!dog) {
+    return <Redirect to='/dogs' />;
+  }
   return (
     <div className='Dog'>
       <h1 className='Dog-name'>{dog.name}</h1>
