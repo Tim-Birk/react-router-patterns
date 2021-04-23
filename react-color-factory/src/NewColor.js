@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './NewColor.css';
 
 const NewColor = ({ addColor }) => {
   const intialState = {
@@ -23,28 +24,30 @@ const NewColor = ({ addColor }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor='name'>Color Name:</label>
-        <input
-          id='name'
-          name='name'
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor='value'>Color Value:</label>
-        <input
-          id='value'
-          name='value'
-          value={formData.value}
-          onChange={handleChange}
-          type='color'
-        />
-      </div>
-      <button>Add New</button>
-    </form>
+    <div className='NewColor'>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor='name'>Color Name:</label>
+          <input
+            id='name'
+            name='name'
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor='value'>Color Value:</label>
+          <input
+            id='value'
+            name='value'
+            value={formData.value}
+            onChange={handleChange}
+            type='color'
+          />
+        </div>
+        <button>Add New</button>
+      </form>
+    </div>
   );
 };
 
