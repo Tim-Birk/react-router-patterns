@@ -23,7 +23,6 @@ const Routes = ({ colors }) => {
       <Route path='/colors/:color'>
         <Color colors={colorList} />
       </Route>
-
       <Redirect to='/colors' />
     </Switch>
   );

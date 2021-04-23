@@ -1,0 +1,21 @@
+.Colors-header {
+  background-color: rgb(31, 2, 31);
+  color: #fff;
+  padding: 20px;
+}
+
+.Colors-header-add {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Colors-header-add:hover {
+  color: rgb(149, 235, 185);
+}
+
+.Colors-list {
+  list-style: none;
+}

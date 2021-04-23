@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Colors.css';
 
 const Colors = ({ colors }) => {
   return (
